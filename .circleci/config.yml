@@ -3,8 +3,6 @@ orbs:
   snyk: snyk/snyk@1.2.3
 jobs:
   build:
-    docker:
-      - image: 'cimg/node:lts'
     steps:
       - checkout
       - run: npm ci
